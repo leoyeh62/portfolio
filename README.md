@@ -1,6 +1,6 @@
 # Portfolio de Léo Morel
 
-Bienvenue sur le dépôt de mon **site web portfolio**. Ce site présente mes projets, compétences et contact.
+Bienvenue sur le dépôt de mon **portfolio**. Ce site présente mes projets, compétences et contact.
 
 ---
 
