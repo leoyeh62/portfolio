@@ -354,3 +354,368 @@ body {
 .contact-form input[type="submit"]:hover {
   background-color: #005fcc;
 }
+
+/* Ajustement du formulaire pour tous les écrans - FORMULAIRE COMPACT */
+.contact-section {
+  max-width: 450px;
+  padding: 25px;
+  margin: 40px auto;
+}
+
+.contact-section h3 {
+  font-size: 1.3em;
+  margin-bottom: 10px;
+}
+
+.contact-form {
+  max-width: 100%;
+}
+
+.contact-form label {
+  font-size: 0.85em;
+  margin-bottom: 3px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form input[type="subject"],
+.contact-form textarea {
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 0.85em;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+.contact-form textarea {
+  min-height: 80px;
+}
+
+.contact-form input[type="submit"] {
+  padding: 8px 16px;
+  font-size: 0.9em;
+  width: auto;
+}
+
+/* Tablettes et petits écrans (max 1024px) */
+@media (max-width: 1024px) {
+  body {
+    zoom: 80%;
+  }
+
+  .nav-container {
+    padding: 0 50px;
+  }
+
+  .logo {
+    font-size: 4rem;
+  }
+
+  .nav-menu {
+    font-size: 1.4rem;
+    gap: 20px;
+  }
+
+  #bienvenue {
+    font-size: 4.5rem;
+  }
+
+  .nom {
+    font-size: 6rem;
+  }
+
+  .text-rotate-word {
+    font-size: 2.5rem;
+  }
+
+  .competences-container,
+  .projets-container {
+    gap: 50px;
+  }
+}
+
+/* Tablettes portrait (max 768px) */
+@media (max-width: 768px) {
+  body {
+    zoom: 100%;
+  }
+
+  .navbar {
+    height: 100px;
+  }
+
+  .nav-container {
+    padding: 0 30px;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .logo {
+    font-size: 2.5rem;
+  }
+
+  .nav-menu {
+    font-size: 1rem;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  #accueil {
+    padding-top: 120px;
+  }
+
+  .accueil-container {
+    padding: 20px;
+  }
+
+  #bienvenue {
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  .nom {
+    font-size: 4rem;
+  }
+
+  .text-rotate {
+    font-size: 1.5rem;
+    align-self: center;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .text-rotate-lines {
+    height: auto;
+    min-height: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .text-rotate-word {
+    font-size: 1.5rem;
+    padding: 0.4rem 0.8rem;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) translateY(100%);
+    white-space: normal;
+    text-align: center;
+    max-width: 90%;
+    line-height: 1.3;
+  }
+
+  @keyframes rotateWords {
+    0% {
+      opacity: 0;
+      transform: translateX(-50%) translateY(100%);
+    }
+    5% {
+      opacity: 1;
+      transform: translateX(-50%) translateY(0);
+    }
+    15% {
+      opacity: 1;
+      transform: translateX(-50%) translateY(0);
+    }
+    20% {
+      opacity: 0;
+      transform: translateX(-50%) translateY(-100%);
+    }
+    100% {
+      opacity: 0;
+      transform: translateX(-50%) translateY(-100%);
+    }
+  }
+
+  #Compétences {
+    font-size: 2.5rem;
+    height: auto;
+    padding: 50px 20px;
+  }
+
+  .langages h3,
+  .outils h3 {
+    font-size: 2rem;
+  }
+
+  .competences-container {
+    gap: 30px;
+    justify-content: center;
+  }
+
+  .competence {
+    width: 120px;
+  }
+
+  .competence img {
+    width: 80px;
+    height: 80px;
+  }
+
+  #projets {
+    padding: 50px 20px;
+  }
+
+  .projets-container {
+    gap: 40px;
+  }
+
+  .projet {
+    font-size: 24px;
+    min-width: 80%;
+  }
+
+  .contact-section {
+    padding: 20px;
+    margin: 30px 20px;
+    max-width: 90%;
+  }
+
+  .contact-section h3 {
+    font-size: 1.2em;
+  }
+
+  .contact-form label {
+    font-size: 0.8em;
+  }
+
+  .contact-form input[type="text"],
+  .contact-form input[type="email"],
+  .contact-form textarea {
+    font-size: 0.85em;
+    padding: 7px;
+  }
+
+  :target {
+    scroll-margin-top: 110px;
+  }
+}
+
+/* Mobiles (max 480px) */
+@media (max-width: 480px) {
+  .navbar {
+    height: auto;
+    padding: 15px 0;
+  }
+
+  .nav-container {
+    padding: 10px 15px;
+    gap: 10px;
+  }
+
+  .logo {
+    font-size: 2rem;
+  }
+
+  .nav-menu {
+    font-size: 0.9rem;
+    gap: 10px;
+  }
+
+  #accueil {
+    padding-top: 140px;
+  }
+
+  #bienvenue {
+    font-size: 2rem;
+  }
+
+  .nom {
+    font-size: 3rem;
+  }
+
+  .text-rotate {
+    font-size: 1rem;
+    width: 100%;
+  }
+
+  .text-rotate-lines {
+    height: auto;
+    min-height: 5rem;
+  }
+
+  .text-rotate-word {
+    font-size: 1.1rem;
+    padding: 0.3rem 0.6rem;
+    max-width: 95%;
+    line-height: 1.2;
+  }
+
+  #Compétences {
+    font-size: 2rem;
+    padding: 30px 10px;
+  }
+
+  .langages h3,
+  .outils h3 {
+    font-size: 1.5rem;
+  }
+
+  .competences-container {
+    gap: 20px;
+  }
+
+  .competence {
+    width: 100px;
+    padding: 10px;
+  }
+
+  .competence img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .projet {
+    font-size: 18px;
+    min-width: 90%;
+  }
+
+  #bomb,
+  #eau,
+  #jetpunk {
+    width: 150px;
+    height: 150px;
+  }
+
+  #unity {
+    width: 250px;
+    height: 150px;
+  }
+
+  .contact-section {
+    padding: 15px;
+    margin: 25px 10px;
+    max-width: 95%;
+  }
+
+  .contact-section h3 {
+    font-size: 1.1em;
+    margin-bottom: 8px;
+  }
+
+  .contact-form label {
+    font-size: 0.75em;
+  }
+
+  .contact-form input[type="text"],
+  .contact-form input[type="email"],
+  .contact-form textarea {
+    font-size: 0.8em;
+    padding: 6px;
+    margin-bottom: 8px;
+  }
+
+  .contact-form textarea {
+    min-height: 60px;
+  }
+
+  .contact-form input[type="submit"] {
+    padding: 7px 14px;
+    font-size: 0.85em;
+  }
+}
