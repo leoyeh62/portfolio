@@ -195,10 +195,11 @@ body {
   }
 }
 
-/* ========== SECTION COMPÉTENCES ========== */
 #Compétences {
   min-height: 100vh;
-  padding: 80px 20px;
+  padding-top: 80px;
+  padding-left: 20px;
+  padding-right: 20px;
   font-size: 3rem;
   text-align: center;
   color: white;
@@ -260,9 +261,8 @@ body {
   margin: 0 auto 10px;
 }
 
-/* ========== SECTION PROJETS ========== */
 #projets {
-  padding: 80px 20px;
+  padding-top: 80px 20px;
   color: white;
   font-family: "Segoe UI", "Arial", "Helvetica", sans-serif;
   min-height: 100vh;
@@ -391,7 +391,6 @@ body {
   font-weight: bold;
 }
 
-/* ========== SECTION CONTACT ========== */
 .contact-section {
   display: flex;
   flex-direction: column;
@@ -472,7 +471,6 @@ body {
   transform: translateY(-2px);
 }
 
-/* ========== FOOTER ========== */
 .footer {
   background-color: #000;
   color: #666;
@@ -480,7 +478,6 @@ body {
   padding: 30px 0;
   font-size: 0.85rem;
   font-family: "Segoe UI", "Arial", "Helvetica", sans-serif;
-  margin-top: 60px;
   width: 100%;
   flex-shrink: 0;
 }
